@@ -30,7 +30,7 @@
 - #### WORKFLOW:
   
   1-  Data :
-   downloaded raw sra files from [ncbi sra](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279176)sra ids as (SRR30941792)[https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941792],(SRR30941793)[https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941793],(SRR30941794)[https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941794],(SRR30941795)[https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941795].
+   downloaded raw sra files from [ncbi sra](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279176). sra ids are [SRR30941792](https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941792),[SRR30941793](https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941793),[SRR30941794](https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941794),[SRR30941795](https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941795).
   Sra files were converted to fastaq files by a bash script (sra-fastq)[]
   
  2-  Quality control :
