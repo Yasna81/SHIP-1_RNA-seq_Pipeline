@@ -51,7 +51,7 @@ We checked the quality of the reads using FastQC [bulk.sh](https://github.com/Ya
 
  > 3-   Alignment :
 
-we used HISAT2 for aligning the reads to refrence genome (align)[https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/align.sh] and sorting the bam files by samtools (sort-index)[https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/sort-index.sh]
+we used HISAT2 for aligning the reads to refrence genome [align](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/align.sh) and sorting the bam files by samtools [sort-index](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/sort-index.sh)
   
  > 4-   Quality control2 :
 
