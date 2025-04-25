@@ -43,23 +43,23 @@ In this study, we conducted a DEG (Differentially Expressed Genes) analysis on W
 - [SRR30941794](https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941794)
 - [SRR30941795](https://trace.ncbi.nlm.nih.gov/Traces/sra?run=SRR30941795)
 
-Sra files were converted to fastaq files by a bash script (sra-fastq)[]
+Sra files were converted to fastaq files by a bash script [sra-fastq](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/sra-fastq.sh)
   
  > 2-   Quality control :
 
-We checked the quality of the reads using FastQC [bulk.sh](). Adaptor contamination was detected in our reads, and we decided to trim the first 15 bases of the reads using Fastp [trimming]().
+We checked the quality of the reads using FastQC [bulk.sh](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/bulk.sh). Adaptor contamination was detected in our reads, and we decided to trim the first 15 bases of the reads using Fastp [trimming](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/trimming.sh).
 
  > 3-   Alignment :
 
-we used HISAT2 for aligning the reads to refrence genome (align)[] and sorting the bam files by samtools (sort-index)[]
+we used HISAT2 for aligning the reads to refrence genome (align)[https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/align.sh] and sorting the bam files by samtools (sort-index)[https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/sort-index.sh]
   
  > 4-   Quality control2 :
 
-Quality control was performed again to confirm that the adaptor contamination was resolved [FASTAQC-2]().
+Quality control was performed again to confirm that the adaptor contamination was resolved [FASTAQC-2](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/FASTQC-2.sh).
 
  > 5-   Feature counting :
  
- using the featurecounts from subread by miniconda ,[count]()
+ using the featurecounts from subread by miniconda ,[count](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/scripts/counts.sh)
 
   ```bash
   conda create -n myenv subread
