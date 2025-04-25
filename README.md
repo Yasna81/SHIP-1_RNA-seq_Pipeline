@@ -31,7 +31,7 @@ In this study, we conducted a DEG (Differentially Expressed Genes) analysis on W
     | mmu05012   | Parkinson disease                                          | -1.7836  | 0.010442   |
     | mmu05020   | Prion disease                                              | -1.7836  | 0.011648   |
 
-  ###### complete table : (GSEA-TABLE)[]
+  ###### complete table : [GSEA-TABLE](https://github.com/Yasna81/SHIP-1_RNA-seq_Pipeline/blob/main/plots/GSEA_plot/kegg_gene_id_mapping.csv)
 
 
 - ### WORKFLOW:
