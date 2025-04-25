@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Define the input directory containing sorted BAM files
+
 input_dir="$HOME/Downloads/project/data/sorted"
 
-# Define the output directory for featureCounts results
+
 output_dir="$HOME/Downloads/project/counts/read"
 mkdir -p "$output_dir"
 
-# Path to your GTF annotation file
+
 gtf_file="$HOME/Downloads/project/counts/anot/Mus_musculus.GRCm39.109.gtf"  # Replace with the actual path to your GTF file
 
-# Number of threads to use
+
 threads=3
 
 # Loop through all sorted BAM files in the input directory
@@ -21,7 +21,7 @@ find "$input_dir" -type f -name "*.aligned.bam" -print0 | while IFS= read -r -d 
 
   echo "Processing BAM file: $bam_file"
 
-  # Run featureCounts with proper gene-level settings and multi-threading
+
   featureCounts \
     -a "$gtf_file" \
     -o "${output_prefix}.counts" \
